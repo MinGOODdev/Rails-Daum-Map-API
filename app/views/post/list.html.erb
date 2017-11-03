@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Board</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+        body {font-family: 'Hanna', sans-serif; color: #0033cc; font-size: 30px;
+            background: url("assets/worldmap.jpg"); background-size: cover; }
+        h1 {margin-top: 100px; text-align: center; color: #663300; font-style: bold;}
+        tr { border: 3px solid black; }
+    </style>
+</head>
+
+<body>
+    
+<h1>COFFEE-IN-BOARD</h1>
+
+<br><br>
+    
+<div class="container">
+    <div class="col">
+        
+    </div>
+    <div class="col-6">
+        <table class="table">
+            <thead style="color: black">
+                <tr>
+                    <th>TITLE</th>
+                    <th>CONTENT</th>
+                    <th>TIME</th>
+                    <th>update</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @every_post.each do |p| %>
+                <tr>
+                    <td><%= p.title %></td>
+                    <td><%= p.content %></td>
+                    <td><%= p.created_at %></td>
+                    <td>
+                        <button type="submit" class="btn btn-secondary btn-sm"><a href="/update/<%= p.id %>" class="btn_comment">수정</a></button>
+                        <button type="submit" class="btn btn-secondary btn-sm"><a href="/destroy/<%= p.id %>" class="btn_comment">삭제</a></button>
+                    </td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+        
+        <h2 style="text-align: center"><button type="submit" class="btn btn-secondary btn-lg"><a href="/indexinpost">글쓰기</a></button></h2>
+        
+    </div>
+    <div class="col">
+        
+    </div>
+    
+</div>
+
+</body>
+</html>

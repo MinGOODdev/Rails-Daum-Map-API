@@ -1,0 +1,137 @@
+<body>
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%;height:350px;"></div>
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=673aa4078a09e12a60e75c4d5bdc7078"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    mapOption = {
+        center: new daum.maps.LatLng(37.5535590, 126.936743), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new daum.maps.Map(mapContainer, mapOption);
+</script>
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Lets SEE!</h2>
+                <h3 class="section-subheading text-muted">Standard is Rehoboth</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_1%></h4>
+                                <h4 class="subheading"><%=@Cate_1%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_1%>쪽으로 <%=@Dist_1%>m가면 <%=@Adde_1%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_2%></h4>
+                                <h4 class="subheading"><%=@Cate_2%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_2%>쪽으로 <%=@Dist_2%>m가면 <%=@Adde_2%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_3%></h4>
+                                <h4 class="subheading"><%=@Cate_3%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_3%>쪽으로 <%=@Dist_3%>m가면 <%=@Adde_3%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_4%></h4>
+                                <h4 class="subheading"><%=@Cate_4%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_4%>쪽으로 <%=@Dist_4%>m가면 <%=@Adde_4%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_5%></h4>
+                                <h4 class="subheading"><%=@Cate_5%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_5%>쪽으로 <%=@Dist_5%>m가면 <%=@Adde_5%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_6%></h4>
+                                <h4 class="subheading"><%=@Cate_6%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_6%>쪽으로 <%=@Dist_6%>m가면 <%=@Adde_6%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><%=@Titl_7%></h4>
+                                <h4 class="subheading"><%=@Cate_7%></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><%=@Dire_7%>쪽으로 <%=@Dist_7%>m가면 <%=@Adde_7%></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Made
+                                <br>by
+                                <br>SKHU</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
